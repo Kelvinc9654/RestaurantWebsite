@@ -6,7 +6,7 @@ function UpperFooter() {
         <div className="bg-gray-100 py-12 px-5 flex flex-col items-center justify-around gap-5 md:flex-row md:px-20">
             {/* Location Image */}
             <div>
-                <img src="./images/other/Location.png" alt="locatation"
+                <img src="/images/other/Location.png" alt="locatation"
                     className="w-full max-w-sm object-cover"
                 />
             </div>
