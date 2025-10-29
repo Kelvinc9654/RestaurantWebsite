@@ -28,11 +28,11 @@ export default function Gallery() {
         "./images/food/udon.png"
     ]
 
-    const slideLeft = () => {
+    const moveLeft = () => {
         setIndex(pIndex => (pIndex === 0 ? images.length - 3 : pIndex - 1));
     }
 
-    const slideRight = () => {
+    const moveRight = () => {
         setIndex(pIndex => (pIndex + 3 >= images.length ? 0 : pIndex + 1));
     }
 
@@ -50,13 +50,13 @@ export default function Gallery() {
 
             {/* arrow buttons */}
             <div className="flex items-center justify-around mt-5">
-                <button onClick={slideLeft}
+                <button onClick={moveLeft}
                     className="border-2 rounded-full w-10 h-10 cursor-pointer hover:bg-red-50"
             >
                 {'<'}
             </button>
 
-                <button onClick={slideRight}
+                <button onClick={moveRight}
                         className="border-2 rounded-full w-10 h-10 cursor-pointer hover:bg-red-50"
                 >
                     {'>'}

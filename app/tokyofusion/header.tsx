@@ -19,7 +19,7 @@ function NavigationBar() {
           </div>
 
           {/* navigation */}
-          <ul className="md:flex items-center space-x-8 text-gray-700 font-medium">
+          <ul className="flex items-center space-x-8 text-gray-700 font-medium not-md:flex-col">
               <li>
                 <a href="#home" className="hover:text-red-600 hover:underline">Home</a>
               </li>
@@ -36,14 +36,14 @@ function NavigationBar() {
 
           {/* buttons */}
           <div className="flex items-center">
-            <button className="ml-6 bg-amber-600 text-white px-5 py-2 rounded-full font-bold
-                                hover:bg-amber-700 cursor-pointer"
+            <button className="ml-6 bg-red-600 text-white px-5 py-2 rounded-full font-bold
+                                hover:bg-red-700 cursor-pointer"
             >
               Reservation
             </button>
 
-            <button className="ml-6 bg-amber-600 text-white px-5 py-2 rounded-full font-bold
-                                hover:bg-amber-700 cursor-pointer"
+            <button className="ml-6 bg-red-600 text-white px-5 py-2 rounded-full font-bold
+                                hover:bg-red-700 cursor-pointer"
                     onClick={() => router.push("/order")}
             >
               Order Now
